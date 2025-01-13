@@ -1,0 +1,204 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+}
+p{
+font-style: italic;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: linear-gradient(135deg, #f5f7fa 25%, #c3cfe2 100%);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.navbar-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#mainNavbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: opacity 0.5s ease, top 0.5s ease;
+}
+#mainNavbar.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevent interactions when hidden */
+    top: -100px; /* Move navbar out of view */
+}
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0)), url('images/heroBackGround1.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#otherServices{
+    background: linear-gradient(135deg, #f5f7fa 25%, #c3cfe2 100%);
+    padding: 50px 0; /* Ensure padding for better spacing */
+}
+#manicureSection{
+    background: linear-gradient(135deg, #f5f7fa 25%, #c3cfe2 100%);
+    padding: 50px 0; /* Ensure padding for better spacing */
+}
+#slideshow{
+    background: linear-gradient(135deg, #f5f7fa 25%, #c3cfe2 100%);
+    padding: 50px 0; /* Ensure padding for better spacing */
+}
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.sectionHeadingMain{
+    font-family: "Pacifico", serif;
+    color: rgb(168, 136, 199);
+}
+.btn-lg {
+    font-weight: 600;
+    background-color: rgb(25, 63, 63);
+    
+    color: #ffffff;
+}
+
+.btn-lg:hover{
+    background-color: #afeeee;
+    color: #ffffff;
+}
+.serviceSubHeading {
+    font-weight: 600;
+    color: #6c757d !important;
+}
+.service-card{
+    background: linear-gradient(200deg, #f5f7fa 25%, #e7d5e7 100%);
+}
+.service-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+.serviceImage:hover {
+    filter: brightness(1.1);
+    transition: filter 0.3s ease-in-out;
+}
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+    }
+
+    .feature-card img {
+        height: 150px;
+    }
+}
+
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.premium-service {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.premium-service:hover {
+    transform: translateY(-3px);
+}
+
+.rounded-4 {
+    border-radius: 1rem !important;
+}
+
+footer{
+    background: #c3cfe2;
+}
+
+
+
+/* Sticky Social Bar */
+.sticky-social-bar {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.sticky-social-bar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sticky-social-bar li {
+    margin: 5px 0;
+}
+
+.sticky-social-bar .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(25, 63, 63);
+    color: white;
+    border-radius: 8px 0 0 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.sticky-social-bar .social-icon:hover {
+    width: 55px;
+    background-color: paleturquoise;
+}
+
+.sticky-social-bar .social-icon i {
+    font-size: 20px;
+}
+
+/* Responsive adjustments 
+@media (max-width: 768px) {
+    .sticky-social-bar {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+    }
+
+    .sticky-social-bar ul {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .sticky-social-bar .social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 8px;
+    }
+
+    .sticky-social-bar .social-icon:hover {
+        width: 40px;
+    }
+} */
